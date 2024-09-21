@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911AD5D92C9F0F11006B1267 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 911AD5D82C9F0F11006B1267 /* FirebaseAnalytics */; };
+		911AD5DB2C9F0F11006B1267 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 911AD5DA2C9F0F11006B1267 /* FirebaseAuth */; };
+		911AD5DD2C9F0F11006B1267 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 911AD5DC2C9F0F11006B1267 /* FirebaseFirestore */; };
+		911AD5DF2C9F0F11006B1267 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 911AD5DE2C9F0F11006B1267 /* FirebaseStorage */; };
 		912D01B12C9EFC2700B8FA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D01B02C9EFC2700B8FA51 /* AppDelegate.swift */; };
 		912D01B32C9EFC2700B8FA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D01B22C9EFC2700B8FA51 /* SceneDelegate.swift */; };
 		912D01B52C9EFC2700B8FA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D01B42C9EFC2700B8FA51 /* ViewController.swift */; };
 		912D01B82C9EFC2700B8FA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912D01B62C9EFC2700B8FA51 /* Main.storyboard */; };
 		912D01BA2C9EFC2900B8FA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912D01B92C9EFC2900B8FA51 /* Assets.xcassets */; };
 		912D01BD2C9EFC2900B8FA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912D01BB2C9EFC2900B8FA51 /* LaunchScreen.storyboard */; };
+		912D01C52C9F02A600B8FA51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912D01C42C9F02A500B8FA51 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,7 @@
 		912D01B92C9EFC2900B8FA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		912D01BC2C9EFC2900B8FA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		912D01BE2C9EFC2900B8FA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912D01C42C9F02A500B8FA51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911AD5D92C9F0F11006B1267 /* FirebaseAnalytics in Frameworks */,
+				911AD5DF2C9F0F11006B1267 /* FirebaseStorage in Frameworks */,
+				911AD5DB2C9F0F11006B1267 /* FirebaseAuth in Frameworks */,
+				911AD5DD2C9F0F11006B1267 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 				912D01B92C9EFC2900B8FA51 /* Assets.xcassets */,
 				912D01BB2C9EFC2900B8FA51 /* LaunchScreen.storyboard */,
 				912D01BE2C9EFC2900B8FA51 /* Info.plist */,
+				912D01C42C9F02A500B8FA51 /* GoogleService-Info.plist */,
 			);
 			path = InstaCloneFirebase;
 			sourceTree = "<group>";
@@ -83,6 +94,12 @@
 			dependencies = (
 			);
 			name = InstaCloneFirebase;
+			packageProductDependencies = (
+				911AD5D82C9F0F11006B1267 /* FirebaseAnalytics */,
+				911AD5DA2C9F0F11006B1267 /* FirebaseAuth */,
+				911AD5DC2C9F0F11006B1267 /* FirebaseFirestore */,
+				911AD5DE2C9F0F11006B1267 /* FirebaseStorage */,
+			);
 			productName = InstaCloneFirebase;
 			productReference = 912D01AD2C9EFC2700B8FA51 /* InstaCloneFirebase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 912D01A42C9EFC2700B8FA51;
+			packageReferences = (
+				911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 912D01AE2C9EFC2700B8FA51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				912D01BD2C9EFC2900B8FA51 /* LaunchScreen.storyboard in Resources */,
+				912D01C52C9F02A600B8FA51 /* GoogleService-Info.plist in Resources */,
 				912D01BA2C9EFC2900B8FA51 /* Assets.xcassets in Resources */,
 				912D01B82C9EFC2700B8FA51 /* Main.storyboard in Resources */,
 			);
@@ -358,6 +379,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		911AD5D82C9F0F11006B1267 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		911AD5DA2C9F0F11006B1267 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		911AD5DC2C9F0F11006B1267 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		911AD5DE2C9F0F11006B1267 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 911AD5D72C9F0F11006B1267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 912D01A52C9EFC2700B8FA51 /* Project object */;
 }
