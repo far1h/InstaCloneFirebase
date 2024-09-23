@@ -15,14 +15,54 @@
                     <view key="view" contentMode="scaleToFill" id="zco-yY-gaE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="download-icon-add+photo+plus+upload+icon-1320184024730607363_512" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-SO-98o">
+                                <rect key="frame" x="46" y="129" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="mQY-zS-pHI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBY-E1-rZt">
+                                <rect key="frame" x="124" y="651" width="144" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="9H5-GL-hfB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadClicked:" destination="39e-Jw-OM7" eventType="touchUpInside" id="91q-ps-rZ9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eU-hZ-gRt">
+                                <rect key="frame" x="46" y="467" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QvY-af-LOd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Khw-SO-98o" firstAttribute="leading" secondItem="QvY-af-LOd" secondAttribute="leading" constant="46" id="44f-QI-t7I"/>
+                            <constraint firstItem="NBY-E1-rZt" firstAttribute="leading" secondItem="QvY-af-LOd" secondAttribute="leading" constant="124" id="4ha-ik-gQD"/>
+                            <constraint firstItem="9eU-hZ-gRt" firstAttribute="centerX" secondItem="NBY-E1-rZt" secondAttribute="centerX" id="MN8-6F-LXe"/>
+                            <constraint firstItem="Khw-SO-98o" firstAttribute="top" secondItem="QvY-af-LOd" secondAttribute="top" constant="129" id="ZW9-tg-EyD"/>
+                            <constraint firstItem="Khw-SO-98o" firstAttribute="centerX" secondItem="zco-yY-gaE" secondAttribute="centerX" id="c40-Wg-K6P"/>
+                            <constraint firstItem="QvY-af-LOd" firstAttribute="bottom" secondItem="NBY-E1-rZt" secondAttribute="bottom" constant="73" id="eJh-H3-btw"/>
+                            <constraint firstItem="9eU-hZ-gRt" firstAttribute="top" secondItem="Khw-SO-98o" secondAttribute="bottom" constant="38" id="fSS-bm-XDG"/>
+                            <constraint firstItem="Khw-SO-98o" firstAttribute="leading" secondItem="9eU-hZ-gRt" secondAttribute="leading" id="ptI-7d-jAv"/>
+                            <constraint firstItem="Khw-SO-98o" firstAttribute="trailing" secondItem="9eU-hZ-gRt" secondAttribute="trailing" id="uCA-Zz-6f2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="UZl-8f-I3V"/>
+                    <connections>
+                        <outlet property="commentText" destination="9eU-hZ-gRt" id="kAD-1e-ZCe"/>
+                        <outlet property="imageView" destination="Khw-SO-98o" id="xxZ-gU-ack"/>
+                        <outlet property="uploadButton" destination="NBY-E1-rZt" id="8CT-3i-pEa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZ6-Zc-SPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-843" y="318"/>
+            <point key="canvasLocation" x="-845.03816793893122" y="406.33802816901408"/>
         </scene>
         <!--Feed-->
         <scene sceneID="2A1-zc-d2M">
@@ -152,6 +192,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="download-icon-add+photo+plus+upload+icon-1320184024730607363_512" width="512" height="512"/>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
