@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="download-icon-add+photo+plus+upload+icon-1320184024730607363_512" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-SO-98o">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-SO-98o">
                                 <rect key="frame" x="46" y="129" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="mQY-zS-pHI"/>
@@ -192,9 +192,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="download-icon-add+photo+plus+upload+icon-1320184024730607363_512" width="512" height="512"/>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="select" width="512" height="512"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
