@@ -18,6 +18,7 @@
 		912D01BA2C9EFC2900B8FA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912D01B92C9EFC2900B8FA51 /* Assets.xcassets */; };
 		912D01BD2C9EFC2900B8FA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912D01BB2C9EFC2900B8FA51 /* LaunchScreen.storyboard */; };
 		912D01C52C9F02A600B8FA51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912D01C42C9F02A500B8FA51 /* GoogleService-Info.plist */; };
+		91AC5F0E2CA6F9EB00D8E55B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC5F0D2CA6F9EB00D8E55B /* FeedCell.swift */; };
 		91D36BBF2CA01F0400CE75F2 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D36BBE2CA01F0400CE75F2 /* FeedViewController.swift */; };
 		91D36BC12CA01F0F00CE75F2 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D36BC02CA01F0F00CE75F2 /* UploadViewController.swift */; };
 		91D36BC32CA01F1800CE75F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D36BC22CA01F1800CE75F2 /* SettingsViewController.swift */; };
@@ -33,6 +34,7 @@
 		912D01BC2C9EFC2900B8FA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		912D01BE2C9EFC2900B8FA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912D01C42C9F02A500B8FA51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91AC5F0D2CA6F9EB00D8E55B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		91D36BBE2CA01F0400CE75F2 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		91D36BC02CA01F0F00CE75F2 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		91D36BC22CA01F1800CE75F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				912D01B22C9EFC2700B8FA51 /* SceneDelegate.swift */,
 				912D01B42C9EFC2700B8FA51 /* ViewController.swift */,
 				912D01B62C9EFC2700B8FA51 /* Main.storyboard */,
+				91AC5F0D2CA6F9EB00D8E55B /* FeedCell.swift */,
 				91D36BBE2CA01F0400CE75F2 /* FeedViewController.swift */,
 				91D36BC02CA01F0F00CE75F2 /* UploadViewController.swift */,
 				91D36BC22CA01F1800CE75F2 /* SettingsViewController.swift */,
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AC5F0E2CA6F9EB00D8E55B /* FeedCell.swift in Sources */,
 				912D01B52C9EFC2700B8FA51 /* ViewController.swift in Sources */,
 				91D36BC12CA01F0F00CE75F2 /* UploadViewController.swift in Sources */,
 				912D01B12C9EFC2700B8FA51 /* AppDelegate.swift in Sources */,
