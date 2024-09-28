@@ -37,6 +37,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(errorMessage.localizedDescription)
             } else {
                 if let safeSnapshot = snapshot {
+                    
+                    self.userEmailArray.removeAll()
+                    self.userImageArray.removeAll()
+                    self.userCommentArray.removeAll()
+                    self.likesArray.removeAll()
+
                     for document in safeSnapshot.documents{
                         print(document.documentID)
                         
