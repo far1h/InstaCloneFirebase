@@ -17,7 +17,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var userCommentArray = [String]()
     var likesArray = [Int]()
     var userImageArray = [String]()
-    
+    var documentIdArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +42,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.userImageArray.removeAll()
                     self.userCommentArray.removeAll()
                     self.likesArray.removeAll()
-
+                    self.documentIdArray.removeAll()
+                    
                     for document in safeSnapshot.documents{
-                        print(document.documentID)
+                        self.documentIdArray.append(document.documentID)
                         
                         if let userComment = document.get("post_comment") as? String {
                             if let userEmail = document.get("posted_by") as? String {
-                                if let likes = document.get("likes") as? Int {
+                                if let likeCount = document.get("likes") as? Int {
                                     if let userImage = document.get("image_url") as? String {
                                         self.userEmailArray.append(userEmail)
                                         self.userImageArray.append(userImage)
                                         self.userCommentArray.append(userComment)
-                                        self.likesArray.append(likes)
+                                        self.likesArray.append(likeCount)
                                     }
                                 }
                             }
@@ -76,6 +77,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.userEmailLabel.text = userEmailArray[indexPath.row]
         cell.likeLabel.text = String(likesArray[indexPath.row])
         cell.commentLabel.text = userCommentArray[indexPath.row]
+        cell.documentID = documentIdArray[indexPath.row]
         cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
         return cell
     }
