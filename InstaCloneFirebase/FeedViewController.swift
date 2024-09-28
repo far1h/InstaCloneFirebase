@@ -32,7 +32,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let fireStoreDatabase = Firestore.firestore()
         
-        fireStoreDatabase.collection("Posts").addSnapshotListener { snapshot, error in
+        fireStoreDatabase.collection("Posts").order(by: "date_posted", descending: true).addSnapshotListener { snapshot, error in
             if let errorMessage = error {
                 print(errorMessage.localizedDescription)
             } else {
